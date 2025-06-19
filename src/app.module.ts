@@ -7,7 +7,6 @@ import { BookModule } from './book/book.module';
 
 import {MongooseModule} from "@nestjs/mongoose";
 import {ConfigModule} from '@nestjs/config';
-import * as process from "node:process";
 
 @Module({
   imports: [
