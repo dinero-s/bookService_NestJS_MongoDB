@@ -15,7 +15,7 @@ import { BookDocument } from '../schemas/book.schema';
 export class BookController {
   constructor(private readonly bookService: BookService) {}
   @Post('create')
-  public(@Body() book: CreateBookDTO): Promise<BookDocument> {
+  public async create(@Body() book: CreateBookDTO): Promise<BookDocument> {
     return this.bookService.createBook(book);
   }
   @Get()
